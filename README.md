@@ -1,69 +1,74 @@
-# React + TypeScript + Vite
+# 🌍 GEOMARE 2025 – Congreso de Ciencias de la Tierra y del Mar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el sitio web oficial del Congreso GEOMARE 2025, organizado por estudiantes de doctorado de la Universitat de Barcelona.  
+El objetivo de esta web es ofrecer toda la información práctica y actualizada del evento.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 ¿Cómo colaborar con la web?
 
-## Expanding the ESLint configuration
+Existen **dos formas principales de contribuir** al desarrollo y mantenimiento del contenido del sitio:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Si tienes conocimientos técnicos (pull requests)
+Puedes hacer una contribución directa al repositorio:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Haz un fork del repositorio.
+2. Realiza tus cambios (principalmente en los textos de las secciones del sitio).
+3. Crea un pull request (PR) hacia la rama principal.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+💡 Esto es ideal para quienes saben usar Git y GitHub y quieren colaborar activamente con el desarrollo.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+### 2. Si no tienes experiencia técnica
+Puedes contribuir enviando tu propuesta de contenido al comité organizador:
+
+- Ya sea texto para secciones, nuevas ideas o correcciones.
+- El comité revisará y validará tu aportación.
+- Una vez aprobada, se enviará a **OGM DevLab**, quien se encargará de montar esos cambios en la web.
+
+⚠️ **OGM DevLab no es responsable de redactar el contenido**, solo de implementarlo en la web una vez aprobado.
+
+---
+
+## 📁 Estructura básica del repositorio
+
+```
+├── src/
+│ ├── App.tsx ← App principal con navegación entre secciones
+│ ├── sections.tsx ← Aquí se define el contenido de cada sección del sitio
+│ └── assets/ ← Imágenes, logos, etc.
+├── index.html
+├── tailwind.config.js ← Paleta de colores adaptada a Ciencias de la Tierra y del Mar
+├── package.json
+└── README.md
+
+```
+---
+
+## 🎨 Estilo y diseño
+
+La web está construida con **React** + **Tailwind CSS**, e incorpora una paleta de colores inspirada en tonos de tierra, mar y vegetación (azules, verdes y marrones suaves).  
+Se adapta automáticamente al modo claro/oscuro según las preferencias del usuario.
+
+---
+
+## 🔧 Requisitos para desarrollo local
+
+- Node.js ≥ 18
+- pnpm o npm
+
+### Comandos básicos
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🤝 ¿Cómo contribuir?
+Toda la información detallada sobre cómo colaborar (ya sea con Git o sin conocimientos técnicos) está en el archivo CONTRIBUTING.md.
+
+Puedes proponer nuevos textos, ideas de diseño o incluso sugerencias para la organización del contenido.
+
