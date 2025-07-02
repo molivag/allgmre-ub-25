@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { sections } from './sections';
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState('introduction');
+  const [activeSection, setActiveSection] = useState('home');
 
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100">
@@ -26,7 +26,7 @@ export default function App() {
       </header>
 
       {/* Main content */}
-      <main className="max-w-7xl mx-auto px-4 py-10 border-4 border-cyan-600">
+      <main className="max-w-7xl mx-auto px-4 py-10">
         {sections.find((s) => s.id === activeSection)?.component}
       </main>
     </div>
