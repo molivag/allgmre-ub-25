@@ -1,7 +1,109 @@
-
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@custom-variant dark (&:where(.dark, .dark *));
 
 
+
+@theme {
+/* fondo claro, tipo tierra seca */
+  --color-earth-background: #f4f1ed;   
+/* azul cielo vivo, para botones y links */
+  --color-earth-primary: #5dade2;
+/* azul profundo, para títulos o bloques destacados */
+  --color-earth-secondary: #1e3a5f;
+/* arena clara, para resaltar o fondos secundarios */
+  --color-earth-accent: #d2b48c;
+/* arcilla, para hovers o detalles */
+  --color-earth-highlight: #a97457;
+/* verde bosque oscuro, para textos principales */
+
+
+
+
+  --color-earth-text: #2e5339;
+  --color-earth-poster1: #d8cdb7;
+  --color-pruebah1: #2E9CE8;
+
+/* Anja colors */
+--color-oil-turqaz: #1c6e83;
+--color-oil-azulos: #1a3e55;
+--color-oil-petról: #0d1a24;
+--color-oil-verseñ: #3f8f1c; 
+--color-oil-verdol: #7aaeab;
+
+  /* 🌍 Fuente global */
+--font-sans: "Nunito Sans", sans-serif;
+
+}
+/* dark { */
+/*   --color-earth-background: #1e1e1e; */
+/*   --color-earth-primary: #5dade2; */
+/*   --color-earth-secondary: #9ec9e2; */
+/*   --color-earth-accent: #3e3e3e; */
+/*   --color-earth-highlight: #d2b48c; */
+/*   --color-earth-text: #f4f1ed; */
+/* } */
+
+/* 🌍 Fuente global */
+@layer base {
+  body {
+    @apply  bg-earth-poster1 font-sans leading-relaxed text-justify;
+  }
+
+  h1 {
+    @apply text-3xl font-bold mb-4 text-pruebah1;
+  }
+
+  h2 {
+    @apply text-2xl font-bold mt-8 mb-4;
+    color: var(--color-earth-primary);
+  }
+
+  h3 {
+    @apply text-xl font-semibold mb-3 text-pruebah1 mt-15
+    
+  }
+
+  h4 {
+    @apply text-lg font-medium mb-2;
+    color: var(--color-earth-accent);
+  }
+
+  p {
+    @apply mb-4 text-base font-medium sm:text-lg lg:text-xl lg:leading-8 tracking-normal;
+    @apply text-oil-azulos
+  }
+
+  @media (min-width: 1736px) {
+   .h1 { font-size: 3.5rem; }
+   .h2 { font-size: 3.25rem; }
+   .h3 { font-size: 2.5rem; }
+   .h4 { font-size: 2rem; }
+   .h5 { font-size: 1.5rem; }
+   .h6 { font-size: 1.25rem; }
+   .p  { font-size: 1.25rem; line-height: 1.75; }
+  }
+
+  @media (min-width: 1900px) {
+    .h1 { font-size: 3.75rem; }
+    .h2 { font-size: 3.5rem; }
+    .h3 { font-size: 2.75rem; }
+    .h4 { font-size: 2.125rem; }
+    .h5 { font-size: 1.625rem; }
+    .h6 { font-size: 1.375rem; }
+    .p  { font-size: 1.3rem; line-height: 1.8; }
+  }
+
+
+  @media (min-width: 2350px) {
+  .h1 { font-size: 4.0rem; }
+  .h2 { font-size: 3.75rem; }
+  .h3 { font-size: 2.75rem; }
+  .h4 { font-size: 2.0rem; }
+  .h5 { font-size: 1.75rem; }
+  .h6 { font-size: 1.5rem; }
+  .p  { font-size: 1.375rem; line-height: 1.8; }
+  .mgaia-t {margin-top: 0.75rem }
+  }
+
+
+}

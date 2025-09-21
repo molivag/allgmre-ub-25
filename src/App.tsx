@@ -6,26 +6,36 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100">
-      {/* Top Nav */}
-      <header className="sticky top-0 z-20 bg-white dark:bg-zinc-800 border-b border-gray-200 dark:border-zinc-700 shadow-sm">
-        <nav className="flex flex-wrap items-center justify-end px-4 py-3 gap-3 mr-10 gap-10">
+    <div className="min-h-screen dark:bg-red-300 text-gray-900 dark:text-gray-100">
+
+      {/* 🎞️ Carrusel / Hero section */}
+      <section className="bg-earth-primary py-16 border-b-4 border-amber-300">
+        {/* Aquí metes el carrusel */}
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-4xl font-extrabold text-white mb-4">GEOMARE 2025</h1>
+          <p className="text-lg text-earth-highlight">Congreso de Ciencias de la Tierra y del Mar</p>
+          {/* Carousel component vendrá aquí */}
+        </div>
+      </section>
+
+      {/* 📌 Top Nav fijo */}
+      <header className="sticky top-0 z-20 bg-white dark:bg-zinc-800 border-b border-zinc-300 dark:border-zinc-700 shadow-sm">
+        <nav className="flex flex-wrap items-center justify-end px-4 gap-3 mr-10">
           {sections.map((section) => (
             <button
               key={section.id}
               onClick={() => setActiveSection(section.id)}
-              className={`text-sm sm:text-base px-3 py-2 rounded-md font-medium text-teal-600
+              className={`text-sm sm:text-base px-3 py-2 rounded-md font-medium 
                 ${activeSection === section.id
-                  ? 'uppercase gap-10 font-bold text-xl px-3 py-2 text-rose-700'
-                  : ' transition-transform duration-500 hover:scale-125 text-rose-700'}`}
-            >
+                  ? 'uppercase font-bold text-xl text-earth-accent'
+                  : 'transition-transform duration-500 hover:scale-125 text-earth-primary'}`}>
               {section.label}
             </button>
           ))}
         </nav>
       </header>
 
-      {/* Main content */}
+      {/* 📖 Main content */}
       <main className="max-w-7xl mx-auto px-4 py-10">
         {sections.find((s) => s.id === activeSection)?.component}
       </main>
