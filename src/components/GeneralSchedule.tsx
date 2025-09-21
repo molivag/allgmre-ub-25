@@ -1,4 +1,6 @@
-import TableWithStripedColumns from '../components/program.tsx'
+import { ThemeProvider } from "@material-tailwind/react";
+
+import TableWithStripedColumns from '../components/program'
 
 function Schedule() {
   return (
@@ -10,7 +12,15 @@ function Schedule() {
       {/* <TableWithStripedColumns/> */}
       <p> The Schedule of the one-day conference will be released in October. </p>
 
-     
+
+
+
+      <TableWithStripedColumns />
+
+
+
+
+
       Time Event
 
       9:00 Registration & Hanging Posters

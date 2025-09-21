@@ -17,8 +17,6 @@
 /* verde bosque oscuro, para textos principales */
 
 
-
-
   --color-earth-text: #2e5339;
   --color-earth-poster1: #d8cdb7;
   --color-pruebah1: #2E9CE8;
@@ -45,64 +43,20 @@
 
 /* 🌍 Fuente global */
 @layer base {
-  body {
-    @apply  bg-earth-poster1 font-sans leading-relaxed text-justify;
-  }
+  body { @apply  bg-earth-poster1 font-sans leading-relaxed text-justify;  }
 
-  h1 {
-    @apply text-3xl font-bold mb-4 text-pruebah1;
-  }
+  h1 { @apply text-4xl font-bold mb-4 text-pruebah1; }   /* ~36px */
 
-  h2 {
-    @apply text-2xl font-bold mt-8 mb-4;
-    color: var(--color-earth-primary);
-  }
-
-  h3 {
-    @apply text-xl font-semibold mb-3 text-pruebah1 mt-15
-    
-  }
-
-  h4 {
-    @apply text-lg font-medium mb-2;
-    color: var(--color-earth-accent);
-  }
-
-  p {
-    @apply mb-4 text-base font-medium sm:text-lg lg:text-xl lg:leading-8 tracking-normal;
-    @apply text-oil-azulos
-  }
-
-  @media (min-width: 1736px) {
-   .h1 { font-size: 3.5rem; }
-   .h2 { font-size: 3.25rem; }
-   .h3 { font-size: 2.5rem; }
-   .h4 { font-size: 2rem; }
-   .h5 { font-size: 1.5rem; }
-   .h6 { font-size: 1.25rem; }
-   .p  { font-size: 1.25rem; line-height: 1.75; }
-  }
-
-  @media (min-width: 1900px) {
-    .h1 { font-size: 3.75rem; }
-    .h2 { font-size: 3.5rem; }
-    .h3 { font-size: 2.75rem; }
-    .h4 { font-size: 2.125rem; }
-    .h5 { font-size: 1.625rem; }
-    .h6 { font-size: 1.375rem; }
-    .p  { font-size: 1.3rem; line-height: 1.8; }
-  }
-
-
-  @media (min-width: 2350px) {
-  .h1 { font-size: 4.0rem; }
-  .h2 { font-size: 3.75rem; }
-  .h3 { font-size: 2.75rem; }
-  .h4 { font-size: 2.0rem; }
-  .h5 { font-size: 1.75rem; }
-  .h6 { font-size: 1.5rem; }
-  .p  { font-size: 1.375rem; line-height: 1.8; }
-  .mgaia-t {margin-top: 0.75rem }
+  h2 { @apply text-3xl font-bold mt-8 mb-4 text-earth-primary; } /* ~30px */
+  
+  h3 { @apply text-2xl font-semibold mb-3 text-pruebah1 mt-15; } /* ~24px */
+  
+  h4 { @apply text-xl font-medium mb-2 text-earth-accent; }       /* ~20px */
+  
+  /* p { @apply mb-4 text-lg font-medium sm:text-xl lg:text-2xl lg:leading-8 tracking-normal text-oil-azulos;} */
+  p { @apply text-base sm:text-lg lg:text-xl 2xl:text-2xl 
+           font-medium leading-relaxed lg:leading-8 
+           tracking-normal mb-4 text-oil-azulos;
   }
 
 

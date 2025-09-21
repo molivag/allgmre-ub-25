@@ -31,10 +31,12 @@ function Home() {
 
       <h4>The conference will include:</h4>
 
-      <ul className="list-disc list-inside">
-        <li>Short talks and poster sessions by early-career researchers</li>
-        <li>Networking and gathering</li>
-        <li>A collaborative and supportive academic event</li>
+      <ul className="list-disc list-inside ">
+        <li><p className="inline">Short talks and poster sessions by early-career researchers</p></li>
+        <li><p>Networking and gathering</p></li>
+
+        <li><p>A collaborative and supportive academic event</p></li>
+
       </ul>
 
 

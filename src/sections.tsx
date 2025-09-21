@@ -11,11 +11,11 @@ export const sections = [
     component: <Home />
   },
   {
-    id: 'about', label: 'About the Conference',
+    id: 'about', label: 'About',
     component: <About />
   },
   {
-    id: 'abstracts', label: 'Abstract Submission',
+    id: 'abstracts', label: 'Abstract',
     component: <Abstracts />
   },
   {

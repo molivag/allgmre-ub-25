@@ -94,13 +94,13 @@ function Abstarcts() {
 
       <h2>Layout of Abstract:</h2>
 
-      <ol className="list-decimal list-inside text-earth-text text-xl">
+      <ol className="list-decimal list-inside text-oil-azulos text-2xl font-medium">
 
-        <li><p className="inline"> The title should be concise (max. 120 characters) and include location where research is developed, methods and timeframe if relevant. </p></li>
-        <li><p className="inline"> Abstracts must be in English.</p></li>
-        <li><p className="inline"> Abstract format: Max. 300 words (Times New Roman, size 10), plus 5 keywords. </p></li>
-        <li><p className="inline"> The abstract should briefly summarize your work and include: Context/Purpose; Methods, Results, Discussion/ Interpretation. </p></li>
-        <li><p className="inline"> It should clearly convey the key message and findings of your presentation, offering an accurate, informative, and self-contained summary. </p></li>
+        <li> The title should be concise (max. 120 characters) and include location where research is developed, methods and timeframe if relevant.</li>
+        <li> Abstracts must be in English.</li>
+        <li>Abstract format: Max. 300 words (Times New Roman, size 10), plus 5 keywords.</li>
+        <li>The abstract should briefly summarize your work and include: Context/Purpose; Methods, Results, Discussion/ Interpretation.</li>
+        <li>It should clearly convey the key message and findings of your presentation, offering an accurate, informative, and self-contained summary.</li>
       </ol>
 
 
