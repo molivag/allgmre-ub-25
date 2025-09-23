@@ -1,13 +1,10 @@
-import { ThemeProvider } from "@material-tailwind/react";
-
-import AboutUs7 from '../components/program'
 
 function Schedule() {
   return (
     <div>
 
 
-      <h1>Schedule</h1>
+      <h1 className="mt-0">Schedule</h1>
 
       {/* <TableWithStripedColumns/> */}
       <p> The Schedule of the one-day conference will be released in October. </p>

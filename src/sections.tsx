@@ -22,9 +22,5 @@ export const sections = [
     id: 'schedule', label: 'Schedule',
     component: <Schedule />
   },
-  {
-    id: 'sponsors', label: 'Institutions Participating',
-    component: <Entities />
-  },
 ];
 

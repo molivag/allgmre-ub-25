@@ -4,49 +4,60 @@ function Abstarcts() {
     <div>
 
 
-      <h1>Abstract Submission & Guidelines</h1>
+      <h1 className="mt-0">Abstract Submission & Guidelines</h1>
 
       <section className="mx-auto space-y-6">
 
         <p>
-          The Call for Abstracts for the eighth GEOMARE Speeches Conference is <span className="font-bold text-rose-400">NOW OPEN!</span>
+          The Call for Abstracts for the 8th GeoMare Speeches Conference is <span className="font-bold bg-gradient-to-r from-blue-200 via-blue-600 to-cyan-500 bg-clip-text text-transparent animate-pulse"> <a href="submission"> NOW OPEN!</a> </span>
         </p>
 
         <p>
-          Whether you plan to give an oral presentation, bring a poster (poster presenters will give a short 1–1.5 minute pitch), or attend without presenting, please complete the registration form to participate in GEOMARE Speeches 2025.
+          Whether you plan to give an oral presentation, present a poster (poster presenters will also give a short 1–1.5 minute pitch), or simply attend without presenting, please complete the registration form to participate in GeoMare Speeches 2025.
         </p>
 
-        <div className="grid grid-cols-2 border-4 border-dashed border-amber-600 mb-10">
+
+      </section>
+
+      <section>
+        <h2 id="submission">Abstract Submission Guidelines</h2>
+        <p>We encourage all interested participants to submit an abstract.</p>
+
+        <div className="grid grid-cols-2  max-w-full border-4 border-dashed border-amber-600 mb-10">
 
           <div className=" border-4 border-double border-red-400" >
             {/* Step 1 */}
             <div className="space-y-2">
-              <h3 className="font-bold text-earth-secondary">Step 1</h3>
+              <h3 className="font-bold ">Step 1</h3>
               <p>Register for the conference filling this form:</p>
               <a
                 href="https://forms.office.com/Pages/ResponsePage.aspx?id=qzwxosOxOk-7ESFXRH3btD9JEcTFRbhDopEpXHLsTN9UNVVCMU9RNE9QNUgyUUhGVkFaOE5SUDM0RC4u" // <-- aquí va tu link real al form
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-earth-secondary text-white font-medium px-5 py-2 rounded-lg shadow hover:bg-earth-secondary transition"
+                className="inline-block bg-rose-400 text-earth-secondary font-extrabold px-5 py-2 rounded-lg shadow hover:bg-earth-highlight transition"
               >
                 Open Registration Form
               </a>
+              <ol className="text-earth-poster1  text-2xl font-medium list-inside list-decimal mb-8">
+                <li> Deadline for registration: October 16th 2025   </li>
+              </ol>
             </div>
 
             {/* Step 2 */}
             <div className="space-y-2 mt-10">
-              <h3 className="font-bold text-earth-secondary">Step 2</h3>
-              <p className="text-earth-text">Read Template Instructions (below).</p>
+              <h3 className="font-bold ">Step 2</h3>
+              <p > Read the Abstract Template instructions (see details below).</p>
+              <p>Please follow the official format carefully to ensure your abstract is accepted.</p>
             </div>
 
             {/* Step 3 */}
             <div className="space-y-2 mt-10">
-              <h3 className="font-bold text-earth-secondary">Step 3</h3>
-              <p className="text-earth-text">Download the Abstract Template:</p>
+              <h3 className="font-bold ">Step 3</h3>
+              <p> Abstract Template:</p>
               <a
                 href="/abstract_template.docx"
                 download
-                className="inline-block bg-earth-highlight text-earth-background font-medium px-5 py-2 rounded-lg shadow hover:bg-earth-highlight transition"
+                className="inline-block bg-rose-400 text-earth-secondary font-extrabold px-5 py-2 rounded-lg shadow hover:bg-earth-highlight transition"
               >
                 Download Template
               </a>
@@ -54,21 +65,28 @@ function Abstarcts() {
 
             {/* Step 4 */}
             <div className="space-y-2 mt-10">
-              <h3 className="font-bold text-earth-secondary">Step 4</h3>
-              <p className="text-earth-text">
-                Submit your abstract before <span className="font-bold">Sunday, 21 September 2025</span> to: <a href="geomare.speeches2025@gmail.com">geomare.speeches2025@gmail.com</a>
+              <h3 className="font-bold ">Step 4</h3>
+              <p>
+                Submit your abstract before <span className="font-bold">Sunday, 29 September 2025 </span> to: <a className="text-rose-400" href="mailto:geomare.speeches2025@gmail.com">geomare.speeches2025@gmail.com</a>
               </p>
 
-              <p className="mt-5">With the structure:</p>
-              <p> Email subjct line: Abstract + Name + Surname </p>
-              <p> Abstract Format: Max. 300 words, 5 keywords </p>
+              <div>
+                <p className="mt-5">With the structure:</p>
+
+                <ol className="ml-5 text-earth-poster1  text-2xl font-medium list-inside list-decimal mb-8">
+                  <li> Email subjct line: Abstract + Name + Surname </li>
+                  <li> Abstract Format: Max. 300 words, 5 keywords </li>
+                </ol>
+              </div>
+
+              <p > Notification of acceptance: <span className=" underline underline-offset-8"> Early October 2025</span> </p>
             </div>
 
           </div>
 
           <div>
             <img
-              className=" ml-auto w-auto xsm:size-auto lg:w-3/4"
+              className=" ml-auto w-auto xsm:size-auto lg:max-w-[95%]"
               // className="mx-auto md:w-3/4 xl:w-full"
 
               src="./img/poster.png"
@@ -77,101 +95,85 @@ function Abstarcts() {
           </div>
 
         </div>
+        <p> If you cannot submit an abstract but would still like to attend, feel free to contact the Organizing Committee to discuss alternative ways to participate.</p>
 
       </section>
 
-      <h2>Abstract Submission Guidelines</h2>
+      <section>
+        <h2>Layout of Abstract:</h2>
+
+        <ol className="list-decimal list-inside text-earth-poster1 text-2xl font-medium space-y-4 mb-8">
+          <li> The title should be concise (max. 120 characters) and include location where research is developed, methods and timeframe if relevant.</li>
+          <li> Abstracts must be in English.</li>
+          <li>Abstract format: Max. 300 words (Times New Roman, size 10)</li>
+          <li>Provide 5 keywords.</li>
+          <li>The abstract should briefly summarize your work and must include:</li>
+          <ol className="ml-5 list-inside list-disc text-2xl font-medium text-earth-poster1">
+            <li> Context/Purpose </li>
+            <li> Methods </li>
+            <li> Results</li>
+            <li> Discussion/ Interpretation </li>
+          </ol>
+
+        </ol>
+        <p>It should clearly convey the key message and findings of your presentation, offering an accurate, informative, and self-contained summary.</p>
 
 
-      <div>
-        <p> We encourage all interested participants to submit an abstract. The deadline for both oral and poster presentations is 21
-          September 2025. Accepted abstracts will be announced in early October. If you're unable to submit an abstract but would still
-          like to attend, feel free to contact us to discuss alternative options for participation.</p>
-        <p> Submit abstracts to: <a href="geomare.speeches2025@gmail.com">geomare.speeches2025@gmail.com</a>, with the subject line: Abstract + Name + Surname. </p>
+      </section>
+      <h2>Oral Presentation and Poster Guidelines</h2>
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] border-4 border-dotted border-blue-400">
 
-        <p> Please use the official Abstract Template (ATTACH WORD TEMPLATE) </p>
-      </div>
+        <div className="border-4 border-dashed border-rose-500">
 
-      <h2>Layout of Abstract:</h2>
-
-      <ol className="list-decimal list-inside text-oil-azulos text-2xl font-medium">
-
-        <li> The title should be concise (max. 120 characters) and include location where research is developed, methods and timeframe if relevant.</li>
-        <li> Abstracts must be in English.</li>
-        <li>Abstract format: Max. 300 words (Times New Roman, size 10), plus 5 keywords.</li>
-        <li>The abstract should briefly summarize your work and include: Context/Purpose; Methods, Results, Discussion/ Interpretation.</li>
-        <li>It should clearly convey the key message and findings of your presentation, offering an accurate, informative, and self-contained summary.</li>
-      </ol>
-
-
-      <div className="grid grid-cols-2">
-        <div>
-
-          <h2>Oral Presentation and Poster Guidelines</h2>
-
-          <div className="border-4 border-dashed border-rose-500">
-            Instructions for Oral Presentations and Posters – Geomare Speeches 2024
-            Dear participants,
-            Below are the detailed instructions for oral presentations and posters at the Geomare Speeches
-            2024 conference. Please follow these guidelines to ensure the smooth running of the event.
-            A. Oral Communications
-
-            Oral communication should be prepared using Microsoft PowerPoint or .pdf format.
-            The presentation should have a 16:9 aspect ratio.
-            The maximum presentation time is 5 minutes, followed by 3 minutes for questions.
-            You must send the presentation file via this e-mail by the 11th of November.
-            Please carry a copy of the presentation just in case, preferably on a USB stick or
-            external hard drive.
-            We request that participants in the first oral session contact the organizing committee
-            during registration. Those with presentation times after the poster session can post their
-            presentations during the coffee break.
-            The conference makes no copyright claims on any item presented, and the authors are
-            free to reuse their materials as they please.
-            
-            B. Posters
-            ● We suggest printing the posters in portrait orientation and A0 or A1 sizes (A0
-            preferred).
-            ● Posters should fit on boards located in the hall during registration.
-
-          </div>
-
-
-
-          o
-
-          <p> Below are the detailed instructions for oral presentations and posters at GEOMARE Speeches. Please follow these guidelines to help ensure a smooth event. </p>
 
           <h3>Oral Presentations</h3>
 
-          <p> Presentations may be held in <span className="font-bold">Catalan</span>, <span className="font-bold">Spanish</span>, or <span className="font-bold">English</span>. We encourage using English to both practice your presentation skills and reach a broader audience.
-            Use Microsoft PowerPoint or PDF format. The slides have to have a 16:9 aspect ratio. The duration of talk must be at most 5 minutes presentation + 3 minutes Q&amp;A.
-          </p> <br />
+          <ol className="ml-5 list-decimal list-inside text-earth-poster1 text-xl font-medium ">
+            <li className="mb-3"> Language: Catalan, Spanish, or English (we encourage English to reach a broader audience).   </li>
 
-          <p>
-            Send your file to our email by 11 November 2025. Also bring a backup copy on a USB or external drive. Presenters in the first session should
-            check in with the organizing committee during registration. Presenters scheduled after the poster session can upload their presentations during
-            the coffee break. The conference makes no copyright claims. You are free to reuse your presentation elsewhere.
-          </p>
+            <li className="mb-3"> Format: Microsoft PowerPoint or PDF, slides in 16:9 aspect ratio. </li>
 
-          <h3>Posters</h3>
+            <li className="mb-3"> <span className="font-bold"> Duration</span>: 5 minutes presentation + 3 minutes Q&A. </li>
 
-          <p> Posters should be printed in portrait orientation, A0 preferred and will be hang on boards available in the hall during registration.</p>
+            <li className="mb-3"><span className="font-bold">File submission:</span> Send your presentation to geomare.speeches2025@gmail.com by 11 November 2025. </li>
+
+            <li className="mb-3">Backup: Bring a copy on a USB stick or external drive.</li>
+
+            <li className="mb-3">Check-in: Presenters in the first session should meet the Organizing Committee during registration. Presenters scheduled after the poster session can upload their files during the coffee break.</li>
+
+            <li className="mb-3">   Copyright: The conference makes no claims on your materials. You are free to reuse them in other contexts.
+            </li>
+          </ol>
+
+          <h3> Posters</h3>
+
+          <ol className="ml-5 list-decimal list-inside text-earth-poster1 text-2xl font-medium space-y-2">
+            <li> Orientation and size: Portrait, A0 (preferred) or A1.</li>
+
+            <li> Display: Posters will be placed on boards in the main hall during registration and remain accessible throughout the conference.</li>
+
+            <li> Poster pitch: Each poster presenter will give a short (1–1.5 minutes) oral pitch to introduce their work to the audience. </li>
+          </ol>
+
         </div>
-        <div>
+        <div className="my-auto">
           <div className="border-4 border-dashed border-rose-400">
             <img
-              className=" mx-auto xsm:size-auto md:w-3/4 mb-28"
+              className=" mx-auto xsm:size-auto md:w-3/4"
               src="./img/abstractsubmision.jpg"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
+        <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
+          Acces to Faculty of Earth Science from main garden
+        </p>
             <img
-              className=" mx-auto xsm:size-auto md:w-3/4 mb-28"
+              className=" mx-auto xsm:size-auto md:w-3/4"
               src="./img/abstractsubmision.jpg"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
-            {/* <p className="p text-base text-center text-green-400 text-opacity-90 xsm:text-justify md:text-left px-2"> */}
-            {/*   This is a sample text used solely for demonstration purposes. Its goal is to showcase how the applied text styling—such as transparency—appears in relation to the previous image or layout. The content itself has no informational value and can be easily replaced with the final text when available. */}
-            {/* </p> */}
+        <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
+          Acces to Faculty of Earth Science from main garden
+        </p>
           </div>
 
 
@@ -181,10 +183,13 @@ function Abstarcts() {
       <hr className="mt-15 border-t-1 text-earth-text" />
       <h2>Privacy</h2>
 
-      <p> By submitting your abstract, you consent to the processing of personal data in accordance with the University of Barcelona’s privacy policy. This includes your email content and will be used solely for organizing the GEOMARE Speeches Congress (e.g. creating name tags, managing communication, archiving abstracts). Your data will not be shared with third parties. Abstracts with author names and affiliations may be published on our website, which will be taken offline in April 2026. No personal data will be stored beyond the conference. </p>
+      <p> By submitting your abstract, you consent to the processing of your personal data in accordance with the University of Barcelona’s privacy policy. Data will be used only for organizing the GeoMare Speeches Conference (e.g., creating name tags, managing communication, and archiving abstracts).  </p>
+      <p>   Abstracts (with author names and affiliations) may be published on the conference website, which will be taken offline in April 2026.   </p>
+
+      <p> No personal data will be stored beyond the conference period.    </p>
 
       <h2>Further questions?</h2>
-      <p> If you have any questions regarding abstract submission, please contact us at geomare.speeches2025@gmail.com. </p>
+      <p> If you have any questions regarding abstract submission, please contact us at <a className="text-rose-400" href="mailto:geomare.speeches2025@gmail.com">geomare.speeches2025@gmail.com</a> </p>
 
 
 

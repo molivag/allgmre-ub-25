@@ -1,5 +1,5 @@
 // App.tsx
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import { sections } from './sections';
 import { Footer } from './components/footer';
 import { ThemeProvider } from '@material-tailwind/react';
@@ -7,6 +7,29 @@ import { ThemeProvider } from '@material-tailwind/react';
 export default function App() {
 
   const [activeSection, setActiveSection] = useState('home');
+
+  useEffect(() => {
+    // Mantener posición del scroll cuando hay un hash (#about, #abstract, etc.)
+    if (window.location.hash) {
+      const el = document.querySelector(window.location.hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    // Forzar al navegador a recordar la posición del scroll
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "auto";
+    }
+  }, []);
+
+
+
+
+
+
+
+
 
   return (
     <ThemeProvider>
@@ -44,7 +67,7 @@ export default function App() {
                     // ? 'text-2xl uppercase text-white font-extrabold bg-rose-500 px-5 py-2 rounded-lg shadow-lg transition-all duration-500'
                     // ? 'text-2xl uppercase text-rose-500 font-extrabold underline drop-shadow-[0_0_10px_#f43f5e]'
                     // ? 'text-2xl uppercase  text-rose-500 font-extrabold underline'
-                    : ' text-xl transition-transform duration-500 hover:scale-150 text-earth-primary'}`}>
+                    : ' text-xl transition-transform duration-500 hover:scale-150 text-rose-600'}`}>
                 {section.label}
               </button>
             ))}

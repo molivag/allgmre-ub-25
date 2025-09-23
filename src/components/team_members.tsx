@@ -12,7 +12,7 @@ const Team = () => {
             <svg
               viewBox="0 0 52 24"
               fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-pruebah1 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
             >
               <defs>
                 <pattern
@@ -27,13 +27,13 @@ const Team = () => {
               </defs>
               <rect
                 fill="url(#1d4040f3-9f3e-4ac7-b117-7d4009658ced)"
-                width="52"
+                width="55"
                 height="24"
               />
             </svg>
-            <span className="relative">Organizing</span>
+            <span className="relative text-pruebah1">Organizing</span>
           </span>{' '}
-          Committee
+          <span className="text-pruebah1">Committee</span>
         </h2>
         <p> GEOMARE Speeches 2025 is organised by a dedicated team of PhD candidates from various institutions: </p>
       </div>

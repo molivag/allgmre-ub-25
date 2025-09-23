@@ -40,6 +40,12 @@
 /*   --color-earth-highlight: #d2b48c; */
 /*   --color-earth-text: #f4f1ed; */
 /* } */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 
 /* 🌍 Fuente global */
 @layer base {
