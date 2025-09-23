@@ -1,89 +1,59 @@
-import { Card, Typography } from "@material-tailwind/react";
- 
-const TABLE_HEAD = ["Name", "Job", "Employed", ""];
- 
-const TABLE_ROWS = [
-  {
-    name: "John Michael",
-    job: "Manager",
-    date: "23/04/18",
-  },
-  {
-    name: "Alexa Liras",
-    job: "Developer",
-    date: "23/04/18",
-  },
-  {
-    name: "Laurent Perrier",
-    job: "Executive",
-    date: "19/09/17",
-  },
-  {
-    name: "Michael Levi",
-    job: "Developer",
-    date: "24/12/08",
-  },
-  {
-    name: "Richard Gran",
-    job: "Manager",
-    date: "04/10/21",
-  },
+import PropTypes from "prop-types";
+
+type Story = {
+  year: string;
+  description: string;
+};
+
+const stories = [
+  { year: "-", description: " " },
+  { year: "-", description: "" },
+  { year: "-", description: "" },
+  { year: "-", description: "" }
 ];
- 
-export function TableWithStripedColumns() {
-  return (
-    <Card className="h-full w-full overflow-scroll">
-      <table className="w-full min-w-max table-auto text-left">
-        <thead>
-          <tr>
-            {TABLE_HEAD.map((head) => (
-              <th key={head} className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
-                >
-                  {head}
-                </Typography>
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {TABLE_ROWS.map(({ name, job, date }, index) => {
-            const isLast = index === TABLE_ROWS.length - 1;
-            const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
- 
-            return (
-              <tr key={name}>
-                <td className={classes}>
-                  <Typography variant="small" color="blue-gray" className="font-normal">
-                    {name}
-                  </Typography>
-                </td>
-                <td className={`${classes} bg-blue-gray-50/50`}>
-                  <Typography variant="small" color="blue-gray" className="font-normal">
-                    {job}
-                  </Typography>
-                </td>
-                <td className={classes}>
-                  <Typography variant="small" color="blue-gray" className="font-normal">
-                    {date}
-                  </Typography>
-                </td>
-                <td className={`${classes} bg-blue-gray-50/50`}>
-                  <Typography as="a" href="#" variant="small" color="blue-gray" className="font-medium">
-                    Edit
-                  </Typography>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </Card>
-  );
-}
 
 
-export default TableWithStripedColumns
+const StoryItem = ({ item }:{item:Story}) => {
+	const { year, description } = item;
+	return (
+		<>
+			<div className="col-span-12">
+				<hr className="bg-black dark:bg-white h-[3px] rounded-sm opacity-100 mt-6 mb-4" />
+			</div>
+			<div className="col-span-4 md:col-span-2">
+				<h1 className="text-[40px] font-medium ml-3">{year}</h1>
+			</div>
+			<div className="col-span-8 md:col-span-10">
+				<p className="text-xl text-earth-poster1 leading-8">{description}</p>
+			</div>
+		</>
+	);
+};
+
+StoryItem.propTypes = {
+	item: PropTypes.object.isRequired,
+};
+
+const AboutUs7 = () => {
+	return (
+		<section className="ezy__about7 light py-14 md:py-24 bg-earth-text rounded-4xl dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+			<div className="container px-4">
+				<div className="grid grid-cols-12 justify-center mb-12">
+					<div className="col-span-12 md:col-span-10 md:col-start-2">
+						<h2 className="text-4xl leading-snug md:text-5xl md:leading-snug font-bold mb-6">
+							General Program (to be defined.....)
+						</h2>
+						<div className="grid grid-cols-12 gap-5 justify-between items-center">
+							{stories.map((item, i) => (
+								<StoryItem item={item} key={i} />
+							))}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+};
+
+export default AboutUs7;
+

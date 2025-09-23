@@ -43,20 +43,25 @@
 
 /* 🌍 Fuente global */
 @layer base {
-  body { @apply  bg-earth-poster1 font-sans leading-relaxed text-justify;  }
+  /* body { @apply  bg-earth-poster1 font-sans leading-relaxed text-justify;  } */
+  body { @apply  bg-oil-petról font-sans leading-relaxed text-justify;  }
 
-  h1 { @apply text-4xl font-bold mb-4 text-pruebah1; }   /* ~36px */
+  h1 { @apply text-4xl font-bold mb-4 text-pruebah1 mt-18; }   /* ~36px */
 
-  h2 { @apply text-3xl font-bold mt-8 mb-4 text-earth-primary; } /* ~30px */
+  h2 { @apply text-3xl font-bold mt-18 mb-4 text-earth-primary; } /* ~30px */
   
   h3 { @apply text-2xl font-semibold mb-3 text-pruebah1 mt-15; } /* ~24px */
   
   h4 { @apply text-xl font-medium mb-2 text-earth-accent; }       /* ~20px */
   
   /* p { @apply mb-4 text-lg font-medium sm:text-xl lg:text-2xl lg:leading-8 tracking-normal text-oil-azulos;} */
+  /* p { @apply text-base sm:text-lg lg:text-xl 2xl:text-2xl  */
+           /* font-medium leading-relaxed lg:leading-8  */
+           /* tracking-normal mb-4 text-oil-azulos; */
+  /* } */
   p { @apply text-base sm:text-lg lg:text-xl 2xl:text-2xl 
            font-medium leading-relaxed lg:leading-8 
-           tracking-normal mb-4 text-oil-azulos;
+           tracking-normal mb-4 text-earth-poster1;
   }
 
 

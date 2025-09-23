@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <section>
-        <h1>About the conference</h1>
+        <h1 className='mt-0'>About the conference</h1>
         <p>
           experiencias en investigación. Esta XXXX edición reafirma nuestro compromiso con una ciencia
           con el objetivo de ofrecer un foro accesible y horizontal para compartir avances, metodologías y
@@ -80,7 +80,7 @@ function About() {
             src="./../../public/caru/LIRA.png"
             alt="Organization of the Marine Biodiversity and Evolution Department"
           />
-          <p className="p text-base text-center text-green-400 text-opacity-90 xsm:text-justify md:text-left px-2">
+          <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
             Esta foto dentyro del mismo div y uno a lado de la otra
           </p>
         </div>
@@ -88,8 +88,7 @@ function About() {
 
         <h2>Topics</h2>
 
-        <ul className="list-inside text-earth-text list-disc text-xl mb-10">
-          <li> <p className="inline">Crystallography</p></li>
+        <ul className="list-inside text-oil-azulos list-disc text-2xl mb-10 font-medium">
           <li> Crystallography</li>
           <li> Geological hazards and geomorphology</li>
           <li> Geophysics and geophysical prospecting</li>

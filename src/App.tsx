@@ -55,7 +55,9 @@ export default function App() {
         <main className="mt-16 max-w-7xl mx-auto px-4 py-10">
           {sections.find((s) => s.id === activeSection)?.component}
         </main>
-        <Footer />
+        <div className='mt-60'>
+          <Footer />
+        </div>      
 
       </div>
 
