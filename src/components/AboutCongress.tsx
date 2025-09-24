@@ -76,7 +76,7 @@ function About() {
         <div className='mt-18'>
           <img
             className=" mx-auto xsm:size-auto md:w-1/2"
-            src="/geomare-speeches/public/caru/LIRA.png"
+            src="/geomare-speeches/caru/LIRA.png"
             alt="Organization of the Marine Biodiversity and Evolution Department"
           />
           <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
