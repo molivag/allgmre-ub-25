@@ -2,9 +2,9 @@ import Team from '../components/team_members'
 
 function About() {
   return (
-    <div>
-      <section>
-        <h1 className='mt-0'>About the conference</h1>
+    <div >
+      <section  >
+        <h1 className='mt-0' id="/geomare-speeches/about">About the conference</h1>
         <p>
           The GeoMare Speeches Conference was created with the idea of offering young scientists an inclusive and dynamic platform to share their research experiences. This 8th edition reaffirms our commitment to building a scientific forum that is both accessible and horizontal, where early-career researchers can present their latest findings, test new methodologies, and exchange ideas in a collaborative atmosphere.</p>
 
@@ -24,7 +24,7 @@ function About() {
         <div className='mt-18'>
           <img
             className=" mx-auto xsm:size-auto md:w-1/2"
-            src="./../../public/caru/aboutCONF.jpg"
+            src="/geomare-speeches/public/caru/aboutCONF.jpg"
             alt="Organization of the Marine Biodiversity and Evolution Department"
           />
           <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
@@ -42,7 +42,7 @@ function About() {
 
         <p>  Here’s why you should join:</p>
 
-        <ul className='text-earth-poster1 text-2xl font-medium'>
+        <ul className='ml-5 mb-5 list-disc list-inside text-earth-poster1 sm:text-base lg:text-2xl lg:font-medium'>
           <li>Free registration! </li>
           <li>Present your work to an interdisciplinary audience </li>
           <li>Get feedback and exchange ideas across Earth and Marine research </li>
@@ -76,7 +76,7 @@ function About() {
         <div className='mt-18'>
           <img
             className=" mx-auto xsm:size-auto md:w-1/2"
-            src="./../../public/caru/LIRA.png"
+            src="/geomare-speeches/public/caru/LIRA.png"
             alt="Organization of the Marine Biodiversity and Evolution Department"
           />
           <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
@@ -89,7 +89,7 @@ function About() {
 
       <h2>Topics</h2>
 
-      <ul className="list-inside text-earth-poster1 list-disc text-2xl mb-2 font-medium">
+      <ul className="list-inside text-earth-poster1 list-decimal sm:text-base space-y-2 lg:text-2xl lg:font-medium mb-2 font-medium">
         <li> Crystallography</li>
         <li> Geological hazards and geomorphology</li>
         <li> Geophysics and geophysical prospecting</li>

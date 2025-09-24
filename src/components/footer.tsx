@@ -1,4 +1,10 @@
-export const Footer = () => {
+
+
+type FooterProps = {
+  setActiveSection: (section: string) => void;
+};
+
+export default function Footer({ setActiveSection }: FooterProps) {
   return (
     <div className="relative mt-16 bg-deep-purple-accent-400">
       <svg
@@ -12,226 +18,251 @@ export const Footer = () => {
         />
       </svg>
       <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
-          <div className="md:max-w-md lg:col-span-2">
+
+        <div className=" grid gap-16 row-gap-10 mb-8 lg:grid-cols-5">
+          {/* <div className="md:max-w-md lg:col-span-2 flex flex-col sm:flex-row sm:items-start"> */}
+          <div className=" lg:col-span-3 flex flex-col sm:flex-row sm:items-start">
+          {/* <div className="mt-4 sm:mt-0 sm:ml-4 flex-1 flex flex-col justify-center text-center sm:text-left"> */}
+
+
+
+            {/* Enlace SOLO en el logo */}
             <a
               href="/"
               aria-label="Go home"
               title="Company"
-              className="inline-flex items-center"
+              className="mx-auto lg:mx-0 flex-shrink-0"
             >
-              <svg
-                className="w-8 text-earth-poster1"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+              <img
+                className="w-38 h-auto md:w-48 "
+                src="/geomare-speeches/img/Logo.png"
+                alt="Organization of the Marine Biodiversity and Evolution Department"
+              />
+            </a>
+
+            {/* Bloque de texto */}
+            <div className="mt-4 sm:mt-0 sm:ml-4 flex flex-col justify-center text-center sm:text-left">
+              <span className="text-xl font-bold tracking-wide text-gray-100 uppercase">
                 GeoMare Speeches
               </span>
-            </a>
-            <div className="mt-4 lg:max-w-sm">
-              <p className="text-sm text-earth-poster1">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+              <p className="mt-2 text-sm lg:mr-8 text-earth-poster1">
+                Predoctoral researchers are modern-day explorers, navigating the vast ocean of knowledge in pursuit of uncharted land.
               </p>
-              <p className="mt-4 text-sm text-earth-poster1">
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+              <p className="mt-2 text-sm text-earth-poster1">
+                Advancing science in the service of humanity
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Category
+
+
+
+
+
+          {/* <div className="max-w-[70%] grid grid-cols-3 sm:gap-5 md:gap-15 row-gap-8 lg:col-span-3 md:grid-cols-3"> */}
+          <div className="md:max-w-[85%] grid grid-cols-3 sm:gap-5 md:gap-15 row-gap-8 lg:col-span-2 md:grid-cols-3">
+
+            <div className="md:ml-auto ">
+              <p className="font-bold tracking-wide text-teal-accent-400">
+                Geomare
+              </p>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  {/* <a */}
+                  {/*   href="home" */}
+                  {/*   className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+                  {/* > */}
+                  {/*   Home */}
+                  {/* </a> */}
+                  <button
+                    onClick={() => setActiveSection("home")}
+                    className=" py-0 transition-colors duration-300 text-earth-poster1 hover:cursor-pointer"
+                  >
+                    Home
+                  </button>
+                </li>
+                <li>
+                  {/* <a */}
+                  {/*   href="#about" */}
+                  {/*   className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+                  {/* > */}
+                  <button
+                    onClick={() => {
+                      setActiveSection("about")
+                      // window.location.hash = "#about";
+                    }}
+
+                    className="transition-colors duration-300 text-earth-poster1 hover:cursor-pointer hover:text-blue-50"
+                  >
+                    About
+                  </button>
+                  {/* </a> */}
+                </li>
+                <li>
+                  {/* <a */}
+                  {/*   href="abstract" */}
+                  {/*   className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+                  {/* > */}
+                  {/*   Abstract */}
+                  {/* </a> */}
+                  <button
+                    onClick={() => {
+                      setActiveSection("abstracts")
+                      // window.location.hash = "#abstracts";
+                    }}
+
+                    className="transition-colors duration-300 text-earth-poster1 hover:cursor-pointer hover:text-blue-50"
+                  >
+                    Abstract
+                  </button>
+
+                </li>
+                <li>
+                  {/* <a */}
+                  {/*   href="Schedule" */}
+                  {/*   className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+                  {/* > */}
+                  {/*   Schedule */}
+                  {/* </a> */}
+                  <button
+                    onClick={() => {
+                      setActiveSection("schedule")
+                      window.location.hash = "#schedule";
+                    }}
+
+                    className="transition-colors duration-300 text-earth-poster1 hover:cursor-pointer hover:text-blue-50"
+                  >
+                    Schedule
+                  </button>
+
+                </li>
+              </ul>
+            </div>
+            <div className="md:ml-auto lg:ml-0">
+              <p className=" font-bold tracking-wide text-teal-accent-400">
+                The UB
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    rel="noopener noreferrer"
+                    href="https://web.ub.edu/en/legal-notice"
                     className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
                   >
-                    News
+                    Legal Notice
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    rel="noopener noreferrer"
+                    href="https://web.ub.edu/en/accessibility"
                     className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
                   >
-                    World
+                    Accesibilidad
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    rel="noopener noreferrer"
+                    href="https://web.ub.edu/en/cookie-policy"
                     className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
                   >
-                    Games
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    References
+                    Coockies
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Cherry
+            <div className="ml-auto sm:ml-0">
+              <p className="font-bold tracking-wide text-teal-accent-400">
+                Institutions
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    rel="noopener noreferrer"
+                    href="https://www.ub.edu/portal/web/ciencies-terra/inici"
                     className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
                   >
-                    Web
+                    The Faculty
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    rel="noopener noreferrer"
+                    href="https://www.ub.edu/geomodels/Home_en.html"
                     className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
                   >
-                    eCommerce
+                    Geomodels
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    rel="noopener noreferrer"
+                    href="https://www.geo3bcn.csic.es/"
                     className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
                   >
-                    Business
+                    Geo3Bcn
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    rel="noopener noreferrer"
+                    href="https://www.icm.csic.es/en"
                     className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
                   >
-                    Entertainment
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Portfolio
+                    ICM
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Apples
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Media
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Brochure
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Nonprofit
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Educational
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Projects
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Business
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Infopreneur
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Personal
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Wiki
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
-                  >
-                    Forum
-                  </a>
-                </li>
-              </ul>
-            </div>
+            {/* <div> */}
+            {/*   <p className="font-semibold tracking-wide text-teal-accent-400"> */}
+            {/*     Business */}
+            {/*   </p> */}
+            {/*   <ul className="mt-2 space-y-2"> */}
+            {/*     <li> */}
+            {/*       <a */}
+            {/*         href="/" */}
+            {/*         className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+            {/*       > */}
+            {/*         Infopreneur */}
+            {/*       </a> */}
+            {/*     </li> */}
+            {/*     <li> */}
+            {/*       <a */}
+            {/*         href="/" */}
+            {/*         className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+            {/*       > */}
+            {/*         Personal */}
+            {/*       </a> */}
+            {/*     </li> */}
+            {/*     <li> */}
+            {/*       <a */}
+            {/*         href="/" */}
+            {/*         className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+            {/*       > */}
+            {/*         Wiki */}
+            {/*       </a> */}
+            {/*     </li> */}
+            {/*     <li> */}
+            {/*       <a */}
+            {/*         href="/" */}
+            {/*         className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400" */}
+            {/*       > */}
+            {/*         Forum */}
+            {/*       </a> */}
+            {/*     </li> */}
+            {/*   </ul> */}
+            {/* </div> */}
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-earth-poster1 sm:flex-row">
           <p className="text-sm text-gray-100">
-            © Copyright 2025. All rights reserved.
+            Designed by <a href="https://github.com/molivag" className="underline underline-offset-2 hover:text-red-500">ogmdevlab</a> © Copyright 2025.
           </p>
+          <p className="text-sm text-gray-100">All rights reserved  </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <a
-              href="/"
+              href="https://bsky.app/profile/cienciesterraub.bsky.social/post/3lpqkjk6pg22k"
               className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -239,7 +270,7 @@ export const Footer = () => {
               </svg>
             </a>
             <a
-              href="/"
+              href="https://es.linkedin.com/in/geologiaub"
               className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
             >
               <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -248,7 +279,7 @@ export const Footer = () => {
               </svg>
             </a>
             <a
-              href="/"
+              href=" "
               className="transition-colors duration-300 text-earth-poster1 hover:text-teal-accent-400"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">

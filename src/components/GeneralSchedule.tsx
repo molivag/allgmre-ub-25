@@ -10,8 +10,6 @@ function Schedule() {
       <p> The Schedule of the one-day conference will be released in October. </p>
 
 
-
-
       {/* <AboutUs7 /> */}
 
       {/* Time Event */}
@@ -47,7 +45,7 @@ function Schedule() {
             alt="Organization of the Marine Biodiversity and Evolution Department"
           />
           <p className="mx-auto text-base text-center text-gray-500 text-opacity-90 xsm:text-justify ">
-            Route to Faculty of Earth Science from Palau Reial suway Station.
+            Route to Faculty of Earth Science from Palau Reial subway station.
           </p>
         </div>
 

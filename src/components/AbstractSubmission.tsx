@@ -4,7 +4,7 @@ function Abstarcts() {
     <div>
 
 
-      <h1 className="mt-0">Abstract Submission & Guidelines</h1>
+      <h1 className="mt-0" id="/geomare-speeches/abstract">Abstract Submission & Guidelines</h1>
 
       <section className="mx-auto space-y-6">
 
@@ -20,27 +20,23 @@ function Abstarcts() {
       </section>
 
       <section>
-        <h2 id="submission">Abstract Submission Guidelines</h2>
+        <h2 id="submission"> Abstract Submission Guidelines</h2>
         <p>We encourage all interested participants to submit an abstract.</p>
 
-        <div className="grid grid-cols-2  max-w-full border-4 border-dashed border-amber-600 mb-10">
+        <div className="grid md:grid-cols-2 max-w-full border-4 border-dashed my-10">
 
-          <div className=" border-4 border-double border-red-400" >
+          <div >
             {/* Step 1 */}
             <div className="space-y-2">
               <h3 className="font-bold ">Step 1</h3>
-              <p>Register for the conference filling this form:</p>
+              <p className="mb-5">Register for the conference filling this form:</p>
               <a
                 href="https://forms.office.com/Pages/ResponsePage.aspx?id=qzwxosOxOk-7ESFXRH3btD9JEcTFRbhDopEpXHLsTN9UNVVCMU9RNE9QNUgyUUhGVkFaOE5SUDM0RC4u" // <-- aquí va tu link real al form
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-rose-400 text-earth-secondary font-extrabold px-5 py-2 rounded-lg shadow hover:bg-earth-highlight transition"
-              >
-                Open Registration Form
-              </a>
-              <ol className="text-earth-poster1  text-2xl font-medium list-inside list-decimal mb-8">
-                <li> Deadline for registration: October 16th 2025   </li>
-              </ol>
+                className=" inline-block bg-rose-400 text-earth-secondary font-extrabold px-5 py-2 rounded-lg shadow hover:bg-earth-highlight transition"
+              > Open Registration Form  </a>
+              <p className="mt-4"> Deadline for registration: October 16th 2025   </p>
             </div>
 
             {/* Step 2 */}
@@ -55,9 +51,9 @@ function Abstarcts() {
               <h3 className="font-bold ">Step 3</h3>
               <p> Abstract Template:</p>
               <a
-                href="/abstract_template.docx"
+                href="/geomare-speeches/Abstract_template_Geomare2025.docx"
                 download
-                className="inline-block bg-rose-400 text-earth-secondary font-extrabold px-5 py-2 rounded-lg shadow hover:bg-earth-highlight transition"
+                className="mt-5 inline-block bg-rose-400 text-earth-secondary font-extrabold px-5 py-2 rounded-lg shadow hover:bg-earth-highlight transition"
               >
                 Download Template
               </a>
@@ -73,7 +69,7 @@ function Abstarcts() {
               <div>
                 <p className="mt-5">With the structure:</p>
 
-                <ol className="ml-5 text-earth-poster1  text-2xl font-medium list-inside list-decimal mb-8">
+                <ol className="ml-5 text-earth-poster1  text-base lg:text-2xl font-medium list-inside list-decimal mb-8">
                   <li> Email subjct line: Abstract + Name + Surname </li>
                   <li> Abstract Format: Max. 300 words, 5 keywords </li>
                 </ol>
@@ -86,7 +82,7 @@ function Abstarcts() {
 
           <div>
             <img
-              className=" ml-auto w-auto xsm:size-auto lg:max-w-[95%]"
+              className=" sm:mt-0 md:mt-10 ml-auto w-auto xsm:size-auto lg:max-w-[97%]"
               // className="mx-auto md:w-3/4 xl:w-full"
 
               src="./img/poster.png"
@@ -102,52 +98,53 @@ function Abstarcts() {
       <section>
         <h2>Layout of Abstract:</h2>
 
-        <ol className="list-decimal list-inside text-earth-poster1 text-2xl font-medium space-y-4 mb-8">
+        <ol className="list-decimal list-inside text-earth-poster1 text-base lg:text-2xl font-medium space-y-4 mb-4">
           <li> The title should be concise (max. 120 characters) and include location where research is developed, methods and timeframe if relevant.</li>
           <li> Abstracts must be in English.</li>
           <li>Abstract format: Max. 300 words (Times New Roman, size 10)</li>
           <li>Provide 5 keywords.</li>
           <li>The abstract should briefly summarize your work and must include:</li>
-          <ol className="ml-5 list-inside list-disc text-2xl font-medium text-earth-poster1">
+          <ol className="ml-5 list-inside list-disc text-base lg:text-2xl font-medium text-earth-poster1">
             <li> Context/Purpose </li>
             <li> Methods </li>
             <li> Results</li>
             <li> Discussion/ Interpretation </li>
           </ol>
-
         </ol>
+
         <p>It should clearly convey the key message and findings of your presentation, offering an accurate, informative, and self-contained summary.</p>
 
 
       </section>
+      <hr className="mt-15 border-t-1 text-earth-text" />
       <h2>Oral Presentation and Poster Guidelines</h2>
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] border-4 border-dotted border-blue-400">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] ">
 
-        <div className="border-4 border-dashed border-rose-500">
+        <div >
 
 
           <h3>Oral Presentations</h3>
 
-          <ol className="ml-5 list-decimal list-inside text-earth-poster1 text-xl font-medium ">
-            <li className="mb-3"> Language: Catalan, Spanish, or English (we encourage English to reach a broader audience).   </li>
+          <ol className="ml-3 lg:ml-5 list-decimal list-inside text-earth-poster1 text-base lg:text-xl font-medium ">
+            <li className="mb-3"> <em className="font-bold">Language</em>: Catalan, Spanish, or English (we encourage English to reach a broader audience).   </li>
 
-            <li className="mb-3"> Format: Microsoft PowerPoint or PDF, slides in 16:9 aspect ratio. </li>
+            <li className="mb-3"> <em className="font-bold">Format</em>: Microsoft PowerPoint or PDF, slides in 16:9 aspect ratio. </li>
 
-            <li className="mb-3"> <span className="font-bold"> Duration</span>: 5 minutes presentation + 3 minutes Q&A. </li>
+            <li className="mb-3"> <em className="font-bold"> Duration</em>: 5 minutes presentation + 3 minutes Q&A. </li>
 
             <li className="mb-3"><span className="font-bold">File submission:</span> Send your presentation to geomare.speeches2025@gmail.com by 11 November 2025. </li>
 
-            <li className="mb-3">Backup: Bring a copy on a USB stick or external drive.</li>
+            <li className="mb-3"> <em className="font-bold">Backup</em>: Bring a copy on a USB stick or external drive.</li>
 
-            <li className="mb-3">Check-in: Presenters in the first session should meet the Organizing Committee during registration. Presenters scheduled after the poster session can upload their files during the coffee break.</li>
+            <li className="mb-3"> <em className="font-bold">Check-in</em>: Presenters in the first session should meet the Organizing Committee during registration. Presenters scheduled after the poster session can upload their files during the coffee break.</li>
 
-            <li className="mb-3">   Copyright: The conference makes no claims on your materials. You are free to reuse them in other contexts.
+            <li className="mb-3">   <em className="font-bold">Copyright</em>: The conference makes no claims on your materials. You are free to reuse them in other contexts.
             </li>
           </ol>
 
           <h3> Posters</h3>
 
-          <ol className="ml-5 list-decimal list-inside text-earth-poster1 text-2xl font-medium space-y-2">
+          <ol className="ml-3 lg:ml-5 list-decimal list-inside text-earth-poster1 text-base lg:text-xl font-medium space-y-2">
             <li> Orientation and size: Portrait, A0 (preferred) or A1.</li>
 
             <li> Display: Posters will be placed on boards in the main hall during registration and remain accessible throughout the conference.</li>
@@ -157,23 +154,23 @@ function Abstarcts() {
 
         </div>
         <div className="my-auto">
-          <div className="border-4 border-dashed border-rose-400">
+          <div>
             <img
-              className=" mx-auto xsm:size-auto md:w-3/4"
-              src="./img/abstractsubmision.jpg"
+              className=" mt-10 md:mt-0 md:mt-20 mx-auto xsm:size-auto md:w-3/4"
+              src="./img/oral.jpg"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
-        <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
-          Acces to Faculty of Earth Science from main garden
-        </p>
+            <p className="sm:mb-0 md:mb-10  text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
+              Oral presentation delivered in last congress edition
+            </p>
             <img
-              className=" mx-auto xsm:size-auto md:w-3/4"
-              src="./img/abstractsubmision.jpg"
+              className=" mx-auto  xsm:size-auto md:w-3/4"
+              src="./img/poster_se.png"
               alt="Organization of the Marine Biodiversity and Evolution Department"
             />
-        <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
-          Acces to Faculty of Earth Science from main garden
-        </p>
+            <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
+              Poster session of last congress edition
+            </p>
           </div>
 
 

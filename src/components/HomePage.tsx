@@ -1,9 +1,7 @@
-
-// src/components/Inicio.tsx
 function Home() {
   return (
     <div>
-      <h1 className="mb-12 mt-0" >GeoMare Speeches</h1>
+      <h1 className="mb-12 mt-0" id="/geomare-speeches/home">GeoMare Speeches</h1>
       <p>
         Welcome to the 8th edition of the GeoMare Speeches Conference, a meeting point designed to bring together the next generation of Earth and Marine scientists. What began as a modest initiative has now become a consolidated event within the academic calendar of the Faculty of Earth Sciences at the University of Barcelona.    </p>
 
@@ -11,16 +9,6 @@ function Home() {
 
       <p>GeoMare Speeches offers a unique opportunity to showcase the diversity of ongoing projects, from geology and geophysics to oceanography, biology, and environmental sciences. More than just a series of presentations, it is a space for dialogue, for meeting peers, and for building a sense of community among early-career scientists. With a strong emphasis on interdisciplinarity, the event encourages participants to cross boundaries, learn from one another, and find new ways to collaborate in addressing the pressing scientific and environmental challenges of our time.</p>
 
-      <div>
-        <img
-          className=" mt-20 mx-auto xsm:size-auto md:w-1/2 mb-28"
-          src="./../../public/caru/LIRA.png"
-          alt="Organization of the Marine Biodiversity and Evolution Department"
-        />
-        {/* <p className="p text-base text-center text-green-400 text-opacity-90 xsm:text-justify md:text-left px-2"> */}
-        {/*   This is a sample text used solely for demonstration purposes. Its goal is to showcase how the applied text styling—such as transparency—appears in relation to the previous image or layout. The content itself has no informational value and can be easily replaced with the final text when available. */}
-        {/* </p> */}
-      </div>
 
 
       <section>
@@ -33,7 +21,7 @@ function Home() {
 
         <h3 className="mt-12">The conference will include:</h3>
 
-        <ul className="list-disc list-inside text-earth-poster1 text-2xl font-medium mb-12">
+        <ul className="ml-5 list-disc list-inside text-earth-poster1 sm:text-base lg:text-2xl lg:font-medium mb-12">
           <li> <em>Short talks and poster sessions</em> highlighting ongoing research by early-career scientists</li>
           <li> <em>Networking and gathering</em>  aimed at fostering dialogue and future collaborations</li>
 
@@ -67,7 +55,7 @@ function Home() {
       <div className="mt-16">
         <img
           className=" mx-auto xsm:size-auto md:w-[90%]"
-          src="./img/Facultat.jpg"
+          src="/geomare-speeches/img/Facultat.jpg"
           alt="Organization of the Marine Biodiversity and Evolution Department"
         />
         <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
