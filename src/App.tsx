@@ -99,7 +99,7 @@ export default function App() {
           {/* Imagen de fondo */}
           <img
             className="absolute inset-0 w-full h-full object-cover"
-            src="/geomare-speeches/public/caru/portada2.jpg"
+            src="/geomare-speeches/caru/portada2.jpg"
             alt="Organization of the Marine Biodiversity and Evolution Department"
           />
 
