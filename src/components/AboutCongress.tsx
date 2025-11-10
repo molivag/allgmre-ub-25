@@ -24,7 +24,7 @@ function About() {
         <div className='mt-18'>
           <img
             className=" mx-auto xsm:size-auto md:w-1/2"
-            src="/geomare-speeches/public/caru/aboutCONF.jpg"
+            src="/geomare-speeches/caru/aboutCONF.jpg"
             alt="Organization of the Marine Biodiversity and Evolution Department"
           />
           <p className="text-base text-center text-gray-500 text-opacity-90 xsm:text-justify px-2">
@@ -59,7 +59,7 @@ function About() {
         <p>This inclusive format ensures that everyone, regardless of their stage of research, has the chance to share ideas and engage with the community.</p>
 
         <p>
-          Don’t miss this opportunity to present your work and connect with your peers – [register here] (link to form).</p>
+          Don’t miss this opportunity to present your work and connect with your peers.</p>
 
       </section>
 
