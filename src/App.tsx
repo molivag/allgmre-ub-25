@@ -108,7 +108,7 @@ export default function App() {
           <div className="relative z-10 text-center text-white px-4">
             <h1 className="text-5xl md:text-8xl font-extrabold mb-4 text-orange-800">GeoMare 2025</h1>
             <p className="text-2xl md:text-4xl text-orange-900 lg:text-orange-400 font-bold">
-              Congreso de Ciencias de la Tierra y del Mar
+              Congress of Earth and Ocean Sciences 
             </p>
           </div>
         </div>
